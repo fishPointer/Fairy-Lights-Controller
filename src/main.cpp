@@ -53,11 +53,11 @@ void loop() {
   if (flc_payload == 1)
   {
     digitalWrite(PIN1, HIGH);
-  }
-  if (flc_payload == 0)
-  {
+    delay(50);
     digitalWrite(PIN1, LOW);
+    flc_payload = 0;
   }
+
   
   
 
